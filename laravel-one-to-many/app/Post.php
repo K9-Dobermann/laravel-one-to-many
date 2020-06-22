@@ -8,5 +8,6 @@ class Post extends Model
 {
   protected $table = 'posts';
   public function category() {
-    return $this -> belogsTo(Category::class);
+    return $this -> belongsTo(Category::class);
+}
 }
