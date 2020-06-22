@@ -11,4 +11,8 @@ class PostController extends Controller
       $posts = Post::all();
       return view('home', compact('posts'));
     }
+    public function edit($id) {
+      $post = Post::findOrFail($id);
+      return view('edit-post', compact('post'));
+    }
 }

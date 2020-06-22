@@ -12,7 +12,10 @@
     <li>
       <h3>{{ $post -> title }}</h3><br>
       <p>{{ $post -> text }}<br>
-      <small>CATEGORY: {{ $post -> category ->name }}</small></p>
+      <small>CATEGORY: {{ $post -> category ->name }}<br>
+                       {{ $post -> category ->description }}
+      </small></p>
+      <a href="{{ route('edit-post', $post['id']) }}">EDIT ME</a>
     </li>
     <br>
   @endforeach
