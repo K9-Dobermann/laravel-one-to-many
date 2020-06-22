@@ -3,37 +3,77 @@ body {
         height: 25vh;
         background: purple;
         color:white;
+        border-bottom:3px solid black;
     }
     footer {
         height: 25vh;
         background: red;
         color:white;
+        border-top:3px solid black;
+
+    }
+    label{
+      font-size: 45px;
+
+    }
+    input{
+
+      height: 40px;
+      width: 200px;
+      border-radius: 5%;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+    }
+    select{
+      height: 40px;
+      width: 200px;
+      border-radius: 5%;
+    }
+    ul {
+
+      display: block;
+      width: 500px;
+    }
+    li{
+      display: inline;
+      margin:0;
+      padding:10px;
 
     }
     .centrale {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+
+        
         height: 500px;
         background: black;
         color: red;
     }
     .spaziosingolo {
+
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         margin: auto;
         background: orange;
         color: grey;
+        flex-wrap: wrap;
     }
-    .main {
+    .spazioedit {
         height: 50vh;
-        background: black;
-        color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        background: orange;
+        color: grey;
+        flex-wrap: wrap;
+
     }
     h1, h2, h3, p {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         color:blue;
@@ -42,6 +82,12 @@ body {
     }
     a {
         text-decoration: none;
+        font-size: 48px;
+        color:green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     a:hover{
         color:red;

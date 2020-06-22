@@ -13,10 +13,11 @@
       <h3>{{ $post -> title }}</h3><br>
       <p>{{ $post -> text }}<br>
       <small>CATEGORY: {{ $post -> category ->name }}<br>
-                       {{ $post -> category ->description }}
+              DESCRIPTION: {{ $post -> category ->description }}
       </small></p>
-      <a href="{{ route('edit-post', $post['id']) }}">EDIT ME</a>
+
     </li>
+      <a href="{{ route('edit-post', $post['id']) }}">EDIT ME</a>
     <br>
   @endforeach
 </ul>

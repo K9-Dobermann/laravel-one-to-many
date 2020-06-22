@@ -8,19 +8,47 @@ body header {
   height: 25vh;
   background: purple;
   color: white;
+  border-bottom: 3px solid black;
 }
 
 body footer {
   height: 25vh;
   background: red;
   color: white;
+  border-top: 3px solid black;
+}
+
+body label {
+  font-size: 45px;
+}
+
+body input {
+  height: 40px;
+  width: 200px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body select {
+  height: 40px;
+  width: 200px;
+  border-radius: 5%;
+}
+
+body ul {
+  display: block;
+  width: 500px;
+}
+
+body li {
+  display: inline;
+  margin: 0;
+  padding: 10px;
 }
 
 body .centrale {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
   height: 500px;
   background: black;
   color: red;
@@ -30,15 +58,23 @@ body .spaziosingolo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: auto;
   background: orange;
   color: grey;
+  flex-wrap: wrap;
 }
 
-body .main {
+body .spazioedit {
   height: 50vh;
-  background: black;
-  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background: orange;
+  color: grey;
+  flex-wrap: wrap;
 }
 
 body h1,
@@ -46,6 +82,7 @@ body h2,
 body h3,
 body p {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: blue;
@@ -55,6 +92,12 @@ body p {
 
 body a {
   text-decoration: none;
+  font-size: 48px;
+  color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 body a:hover {

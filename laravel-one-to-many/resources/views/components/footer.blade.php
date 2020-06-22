@@ -1,5 +1,5 @@
 <footer>
-    <div class="">
+    <div class="footer">
 
     <h2>
         ciao sono il footer!!!

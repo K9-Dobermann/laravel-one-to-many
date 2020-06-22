@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-
+<div class="spazioedit">
 <form action="" method="post">
   @csrf
   @method('POST')
@@ -14,7 +14,7 @@
   <br>
   <label for="category">CATEGORY</label>
   <select name="category">
-    
+
     <option value="1">1</option>
     <option value="2" selected>2</option>
     <option value="3">3</option>
@@ -23,5 +23,5 @@
 
 </form>
 
-
+</div>
 @endsection
